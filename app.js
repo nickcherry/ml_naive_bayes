@@ -42,7 +42,7 @@ const promptForTweet = () => {
     console.log(`\nThe classifier's best guess is ${ likelihoods[0].category }.\n`);
     console.log('Below are the scores for each user.')
     likelihoods.forEach((likelihood) => {
-      console.log(`- ${ likelihood.category } (${ likelihood.score })`);
+      console.log(`- ${ likelihood.category }: ${ likelihood.score }`);
     });
     promptForTweet();
   });
