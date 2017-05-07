@@ -1,0 +1,24 @@
+{
+  "name": "ml_naive_bayes",
+  "version": "1.0.0",
+  "description": "Machine Learning Tutorial: Naive Bayes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/nickcherry/ml_naive_bayes"
+  },
+  "keywords": [
+    "naive",
+    "bayes",
+    "machine",
+    "learning"
+  ],
+  "author": "Nick Cherry <nickcherryjiggz@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "natural": "^0.5.1"
+  }
+}
