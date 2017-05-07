@@ -15,11 +15,8 @@ class BayesClassifier {
     /* Initialize object to track number of documents trained for each category */
     this.documentCountsByCategory = documentCountsByCategory || {};
 
-    /* Convert the stop words array to an object, for faster lookups */
-    this.stopWords = (stopWords || []).reduce((words, word) => {
-      words[word] = true;
-      return words;
-    }, {});
+    /* Initialize a set of stopwords */
+    this.stopWords = new Set(stopWords);
   }
 
   train(category, document) {
@@ -86,7 +83,7 @@ class BayesClassifier {
     /* First we'll tokenize the document's text, e.g. "Yes we can" becomes ["Yes", "we", "can"] */
     return this.tokenizer.tokenize(document)
       /* Then remove any stop words from the token array */
-      .filter((token) => !this.stopWords[token])
+      .filter((token) => !this.stopWords.has(token))
       /* And reduce each word to its downcased stem / root, e.g. "Inspiring" becomes "inspir" */
       .map(this.stemmer.stem)
   }
