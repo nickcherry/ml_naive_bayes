@@ -26,9 +26,9 @@ class BayesClassifier {
       /* Increment the stem count for our category */
       this.stemCountsByCategory[category] = this.stemCountsByCategory[category] || {};
       this.stemCountsByCategory[category][stem] = (this.stemCountsByCategory[category][stem] || 0) + 1;
-      /* Increment the document count for our category */
-      this.documentCountsByCategory[category] = (this.documentCountsByCategory[category] || 0) + 1;
     });
+    /* Increment the document count for our category */
+    this.documentCountsByCategory[category] = (this.documentCountsByCategory[category] || 0) + 1;
   }
 
   classify(document) {

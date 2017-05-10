@@ -27,7 +27,6 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-
 /* Prompt user for tweets */
 const EXIT_CMD = 'exit'
 const PROMPT = [
