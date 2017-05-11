@@ -1,6 +1,6 @@
 # Machine Learning for Mere Mortals: Naive Bayes
 
-A simple classifier built to accompany [the blog post](http://nick-cherry.com). _(Coming soon!)_
+A simple classifier built to accompany [the blog post](http://nick-cherry.com/blog/naive_bayes).
 
 ## Installing Dependencies
 
