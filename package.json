@@ -1,7 +1,7 @@
 {
   "name": "ml_naive_bayes",
   "version": "1.0.0",
-  "description": "Machine Learning Tutorial: Naive Bayes",
+  "description": "Machine Learning for Mere Mortals: Naive Bayes",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
